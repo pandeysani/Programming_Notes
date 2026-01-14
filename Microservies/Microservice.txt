@@ -161,6 +161,55 @@ Microservices - Complex
 
 =====================================================================================================
 
+# MICROSERVICE BASIC ARCHITECTURE ----->
+
+                 +-------------+
+                 |   CLIENT    |
+                 | (Web/Mobile)|
+                 +-------------+
+                        |
+                        v
+                 +----------------+
+                 |  API GATEWAY   |
+                 | (Single Entry) |
+                 +----------------+
+                        |
+        -----------------------------------
+        |                |                |
+        v                v                v
++---------------+  +---------------+  +---------------+
+| USER SERVICE  |  | ORDER SERVICE |  | PAYMENT SERV. |
++---------------+  +---------------+  +---------------+
+        |                |                |
+        v                v                v
++---------------+  +---------------+  +---------------+
+| USER DATABASE |  | ORDER DATABASE|  | PAYMENT DB    |
++---------------+  +---------------+  +---------------+
+
+
+========================================================================================================
+
+# Stateless services --> A stateless service is a service that does not store any client session or request-related data between requests.
+
+Each request is treated as independent and complete.
+
+The service does not remember previous interactions. (For example Login Services)
+
+========================================================================================================
+
+#Service Decomposition-> 
+
+Service decomposition is the process of breaking a large application or system into smaller, independent services, where each service performs a specific business function.
+
+It is a core concept of microservices architecture.
+
+=======================================================================================================
+
+
+
+
+
+
 
 
 
